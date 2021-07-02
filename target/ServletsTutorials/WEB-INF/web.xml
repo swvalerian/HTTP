@@ -1,26 +1,149 @@
 <!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<!--   mvn tomcat7:run  -->
 
 <web-app>
-  <display-name>ServletsTutorials from swvalerian</display-name>
+    <display-name>ServletsTutorials from swvalerian</display-name>
 
-  <servlet>
-    <servlet-name>SimpleServlet</servlet-name>
-    <servlet-class>com.swvalerian.servletstutorial.SimpleServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>StatusCodeDemo</servlet-name>
-    <servlet-class>com.swvalerian.servletstutorial.StatusCodeDemo</servlet-class>
-  </servlet>
+    <servlet>
+        <servlet-name>SimpleServlet</servlet-name>
+        <servlet-class>com.swvalerian.servletstutorial.SimpleServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StatusCodeDemo</servlet-name>
+        <servlet-class>com.swvalerian.servletstutorial.StatusCodeDemo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletRequestDem</servlet-name>
+        <servlet-class>com.swvalerian.servletstutorial.ServletRequestDemo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletResponseDemo</servlet-name>
+        <servlet-class>com.swvalerian.servletstutorial.ServletResponseDemo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+        <servlet-class>com.swvalerian.servletstutorial.PassingParametersUsingGetMethodDemo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
+        <servlet-class>com.swvalerian.servletstutorial.PassingParametersUsingPostMethodDemo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ErrorDemo</servlet-name>
+        <servlet-class>com.swvalerian.servletstutorial.ErrorDemo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SessionTrackingDemo</servlet-name>
+        <servlet-class>com.swvalerian.servletstutorial.SessionTrackingDemo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CookieDemo</servlet-name>
+        <servlet-class>com.swvalerian.servletstutorial.CookieDemo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DateTimeDemo</servlet-name>
+        <servlet-class>com.swvalerian.servletstutorial.DateTimeDemo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RedirectDemo</servlet-name>
+        <servlet-class>com.swvalerian.servletstutorial.RedirectDemo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PageVisitsCounterDemo</servlet-name>
+        <servlet-class>com.swvalerian.servletstutorial.PageVisitsCounterDemo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FileUploadDemo</servlet-name>
+        <servlet-class>com.swvalerian.servletstutorial.FileUploadDemo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SendEmailDemo</servlet-name>
+        <servlet-class>com.swvalerian.servletstutorial.SendEmailDemo</servlet-class>
+    </servlet>
 
-  <servlet-mapping>
-    <servlet-name>SimpleServlet</servlet-name>
-    <url-pattern>/Simser</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>StatusCodeDemo</servlet-name>
-    <url-pattern>/statuscode</url-pattern>
-  </servlet-mapping>
+    <filter>
+        <filter-name>FilterDemo</filter-name>
+        <filter-class>com.swvalerian.servletstutorial.FilterDemo</filter-class>
+    </filter>
+
+    <!--   mvn tomcat7:run  -->
+
+    <servlet-mapping>
+        <servlet-name>SimpleServlet</servlet-name>
+        <url-pattern>/Simser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StatusCodeDemo</servlet-name>
+        <url-pattern>/statuscode</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletRequestDem</servlet-name>
+        <url-pattern>/request</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletResponseDemo</servlet-name>
+        <url-pattern>/responseMe</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+        <url-pattern>/getParamDemo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
+        <url-pattern>/postParamDemo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ErrorDemo</servlet-name>
+        <url-pattern>/ErrorDemo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SessionTrackingDemo</servlet-name>
+        <url-pattern>/session</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CookieDemo</servlet-name>
+        <url-pattern>/cookie</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DateTimeDemo</servlet-name>
+        <url-pattern>/DateTime</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RedirectDemo</servlet-name>
+        <url-pattern>/RedirectDemo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PageVisitsCounterDemo</servlet-name>
+        <url-pattern>/counter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FileUploadDemo</servlet-name>
+        <url-pattern>/FileUploadDemo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SendEmailDemo</servlet-name>
+        <url-pattern>/SendEmailDemo</url-pattern>
+    </servlet-mapping>
+
+    <filter-mapping>
+        <filter-name>FilterDemo</filter-name>
+        <url-pattern>/filter</url-pattern>
+    </filter-mapping>
+
+
+    <!--Вводим отображение на свой сервлет для обработки ошибок  -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/ErrorDemo</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.Error</exception-type>
+        <location>/ErrorDemo</location>
+    </error-page>
+
+    <!--   mvn tomcat7:run  -->
 
 </web-app>

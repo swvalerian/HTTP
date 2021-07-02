@@ -19,9 +19,21 @@
     <maven.compiler.target>8</maven.compiler.target>
     <javax.servlet.api.version>2.5</javax.servlet.api.version>
     <tomcat.plugin.version>2.2</tomcat.plugin.version>
+    <apache.commons.fileupload.version>1.2.2</apache.commons.fileupload.version>
+    <javax.mail.version>1.4</javax.mail.version>
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>com.sun.mail</groupId>
+      <artifactId>javax.mail</artifactId>
+      <version>1.6.2</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-fileupload</groupId>
+      <artifactId>commons-fileupload</artifactId>
+      <version>1.2.2</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

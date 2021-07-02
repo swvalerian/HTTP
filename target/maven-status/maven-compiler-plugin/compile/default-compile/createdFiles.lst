@@ -1,2 +1,16 @@
-com\swvalerian\servletstutorial\SimpleServlet.class
+com\swvalerian\servletstutorial\FilterDemo.class
+com\swvalerian\servletstutorial\SendEmailDemo$1.class
+com\swvalerian\servletstutorial\ServletRequestDemo.class
+com\swvalerian\servletstutorial\SessionTrackingDemo.class
+com\swvalerian\servletstutorial\PassingParametersUsingPostMethodDemo.class
+com\swvalerian\servletstutorial\PageVisitsCounterDemo.class
+com\swvalerian\servletstutorial\DateTimeDemo.class
+com\swvalerian\servletstutorial\ErrorDemo.class
+com\swvalerian\servletstutorial\RedirectDemo.class
+com\swvalerian\servletstutorial\SendEmailDemo.class
+com\swvalerian\servletstutorial\PassingParametersUsingGetMethodDemo.class
 com\swvalerian\servletstutorial\StatusCodeDemo.class
+com\swvalerian\servletstutorial\SimpleServlet.class
+com\swvalerian\servletstutorial\CookieDemo.class
+com\swvalerian\servletstutorial\FileUploadDemo.class
+com\swvalerian\servletstutorial\ServletResponseDemo.class
